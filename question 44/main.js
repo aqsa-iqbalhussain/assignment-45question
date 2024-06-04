@@ -1,0 +1,16 @@
+"use strict";
+// question 44
+Object.defineProperty(exports, "__esModule", { value: true });
+//Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. 
+// The function should have one parameter that collects as many items as the function call provides,
+// and it should print a summary of the sandwich that is being ordered. Call the function three times, 
+//using a different number of arguments each time.
+function makeSandwich(...items) {
+    console.log("making a sandwich with following items:");
+    items.forEach(element => console.log("-" + element));
+    console.log("Now enjoy sandwich\n\n");
+}
+//calling the function 3 time using different numbers of arguments  each time
+makeSandwich("chicken", "cheese", "mayo", "Egg");
+makeSandwich("Beef", "cheese");
+makeSandwich("chicken", "cheese", "mayo", "tomato");
